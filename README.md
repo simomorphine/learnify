@@ -1,2 +1,23 @@
 # learnify
-AI tools for teachers
+## AI Teaching Tools
+
+## Overview
+
+**AI Teaching Tools** is a web application designed to assist educators in creating evaluations and exams using advanced artificial intelligence. This platform supports various educational tasks, including:
+
+- **Evaluation Creation**: Generate and manage custom evaluations and exams.
+- **Educational Planning**: Organize short-term, medium-term, and long-term teaching activities.
+- **Student Tracking**: Monitor and track student progress and learning outcomes.
+- **Report Generation**: Automatically produce detailed reports based on evaluations and student performance.
+
+This tool aims to simplify and enhance the teaching process by leveraging AI to automate and improve various educational tasks.
+
+## Installation
+
+To get started with **AI Teaching Tools** on your local machine, follow these steps:
+
+1. **Clone the Repository**:
+
+   ```bash
+   git clone https://github.com/yourusername/ai-teaching-tools.git
+   cd ai-teaching-tools
