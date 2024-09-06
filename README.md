@@ -25,15 +25,30 @@ To get started with **AI Teaching Tools** on your local machine, follow these st
    ```bash
    python -m venv venv
 3. **Activate the Virtual Environment**:
-- **Windows:**
-  ```bash
-  venv\Scripts\activate
-- **macOS/Linux**:
-  ```bash
-  source venv/bin/activate
+    - **Windows:**
+       ```bash
+       venv\Scripts\activate
+    - **macOS/Linux**:
+       ```bash
+       source venv/bin/activate
 4. **Install Dependencies**:
-  ```bash
-  pip install -r requirements.txt
+   ```bash
+   pip install -r requirements.txt
+5. **Create a `.env` File**:
+In the project root directory, create a `.env` file with the following content:
+   ```bash
+   DATABASE_URI=sqlite:///site.db
+   SECRET_KEY=your_secret_key_here
+Replace `your_secret_key_here` with a secure key of your choice.   
+6. **Run the Application**:
+Start the Flask development server by running:
+   ```bash
+   flask run
+Alternatively, you can use `run.py`:
+   ```bash
+   python run.py
+The application will be accessible at `http://127.0.0.1:5000/` by default.
+
 
 
    
