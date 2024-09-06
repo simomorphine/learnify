@@ -35,11 +35,11 @@ To get started with **AI Teaching Tools** on your local machine, follow these st
    ```bash
    pip install -r requirements.txt
 5. **Create a `.env` File**:
-- In the project root directory, create a `.env` file with the following content:
-   ```bash
-   DATABASE_URI=sqlite:///site.db
-   SECRET_KEY=your_secret_key_here
- Replace `your_secret_key_here` with a secure key of your choice.   
+   - In the project root directory, create a `.env` file with the following content:
+      ```bash
+      DATABASE_URI=sqlite:///site.db
+      SECRET_KEY=your_secret_key_here
+    Replace `your_secret_key_here` with a secure key of your choice.   
 6. **Run the Application**:
 - Start the Flask development server by running:
    ```bash
