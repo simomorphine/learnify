@@ -39,7 +39,7 @@ To get started with **AI Teaching Tools** on your local machine, follow these st
    ```bash
    DATABASE_URI=sqlite:///site.db
    SECRET_KEY=your_secret_key_here
-Replace `your_secret_key_here` with a secure key of your choice.   
+ Replace `your_secret_key_here` with a secure key of your choice.   
 6. **Run the Application**:
 - Start the Flask development server by running:
    ```bash
