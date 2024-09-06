@@ -35,19 +35,25 @@ To get started with **AI Teaching Tools** on your local machine, follow these st
    ```bash
    pip install -r requirements.txt
 5. **Create a `.env` File**:
-In the project root directory, create a `.env` file with the following content:
+- In the project root directory, create a `.env` file with the following content:
    ```bash
    DATABASE_URI=sqlite:///site.db
    SECRET_KEY=your_secret_key_here
 Replace `your_secret_key_here` with a secure key of your choice.   
 6. **Run the Application**:
-Start the Flask development server by running:
+- Start the Flask development server by running:
    ```bash
    flask run
-Alternatively, you can use `run.py`:
+- Alternatively, you can use `run.py`:
    ```bash
    python run.py
 The application will be accessible at `http://127.0.0.1:5000/` by default.
+## Usage
+2. **Authentication**: Sign up or log in to access the platform's features.
+3. **Create Evaluations**: Use the evaluation tools to design and manage assessments.
+4. **Plan Lessons**: Utilize planning tools for organizing educational activities.
+5. **Track Students**: Monitor and assess student progress and outcomes.
+6. **Generate Reports**: Create detailed reports based on evaluations and student performance.
 
 
 
