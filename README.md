@@ -21,3 +21,19 @@ To get started with **AI Teaching Tools** on your local machine, follow these st
    ```bash
    git clone https://github.com/yourusername/ai-teaching-tools.git
    cd ai-teaching-tools
+2. **Create a Virtual Environment**:
+   ```bash
+   python -m venv venv
+3. **Activate the Virtual Environment**:
+- **Windows:**
+  ```bash
+  venv\Scripts\activate
+- **macOS/Linux**:
+  ```bash
+  source venv/bin/activate
+4. **Install Dependencies**:
+  ```bash
+  pip install -r requirements.txt
+
+
+   
