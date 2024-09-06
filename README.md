@@ -49,12 +49,15 @@ Replace `your_secret_key_here` with a secure key of your choice.
    python run.py
 The application will be accessible at `http://127.0.0.1:5000/` by default.
 ## Usage
-2. **Authentication**: Sign up or log in to access the platform's features.
-3. **Create Evaluations**: Use the evaluation tools to design and manage assessments.
-4. **Plan Lessons**: Utilize planning tools for organizing educational activities.
-5. **Track Students**: Monitor and assess student progress and outcomes.
-6. **Generate Reports**: Create detailed reports based on evaluations and student performance.
-
+1. **Authentication**: Sign up or log in to access the platform's features.
+2. **Create Evaluations**: Use the evaluation tools to design and manage assessments.
+3. **Plan Lessons**: Utilize planning tools for organizing educational activities.
+4. **Track Students**: Monitor and assess student progress and outcomes.
+5. **Generate Reports**: Create detailed reports based on evaluations and student performance.
+## License
+- This project is licensed under the MIT License. See the LICENSE file for details.
+## Contact
+- For any questions or feedback, please reach out to mohamedelwardi@yahoo.com.
 
 
    
