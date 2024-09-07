@@ -11,7 +11,42 @@
 - **Report Generation**: Automatically produce detailed reports based on evaluations and student performance.
 
 This tool aims to simplify and enhance the teaching process by leveraging AI to automate and improve various educational tasks.
+## Technologies Involved
 
+### Flask
+- **Description**: A lightweight WSGI web application framework in Python. It is designed to be simple and easy to use, making it ideal for building web applications and APIs.
+- **Key Features**: Routing, templating, and request handling.
+- **Usage**: To create the web server, handle HTTP requests, and render templates.
+
+### OpenAI Assistant API
+- **Description**: An API provided by OpenAI that allows developers to integrate advanced language models into their applications. The API enables conversational interactions, content generation, and other language-based functionalities.
+- **Key Features**: Natural language understanding, text generation, and context-aware responses.
+- **Usage**: To generate intelligent responses and handle natural language queries from users.
+
+### SQLAlchemy
+- **Description**: A SQL toolkit and Object-Relational Mapping (ORM) library for Python. It provides a set of high-level API abstractions for database operations.
+- **Key Features**: ORM, query construction, and database connection management.
+- **Usage**: To interact with the database, manage data models, and perform CRUD operations.
+
+### Jinja2
+- **Description**: A templating engine for Python that integrates seamlessly with Flask. It allows for dynamic HTML generation and rendering.
+- **Key Features**: Template inheritance, control structures, and template rendering.
+- **Usage**: To render HTML templates and generate dynamic content for web pages.
+
+### Bootstrap
+- **Description**: A popular front-end framework for designing responsive and visually appealing web pages.
+- **Key Features**: Pre-designed components, grid system, and responsive design utilities.
+- **Usage**: To style the web application's user interface and ensure it is mobile-friendly.
+
+### JavaScript
+- **Description**: A programming language used for creating interactive elements on web pages.
+- **Key Features**: Event handling, DOM manipulation, and asynchronous operations.
+- **Usage**: To enhance user interactions and add dynamic features to the web application.
+
+### SQLite
+- **Description**: A lightweight, disk-based database engine that is self-contained and serverless.
+- **Key Features**: Simple setup, zero-configuration, and compact size.
+- **Usage**: To store and manage application data locally.
 ## Installation
 
 To get started with **AI Teaching Tools** on your local machine, follow these steps:
