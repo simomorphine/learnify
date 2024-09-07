@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Evaluation</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="my-4">Create Evaluation</h1>
+
+        <!-- Display flash messages -->
+        {% with messages = get_flashed_messages(with_categories=true) %}
+            {% if messages %}
+                <div class="alert-container">
+                    {% for category, message in messages %}
+                        <div class="alert alert-{{ category }}">
+                            {{ message }}
+                        </div>
+                    {% endfor %}
+                </div>
+            {% endif %}
+        {% endwith %}
+
+        <!-- Evaluation Form -->
+        <form method="POST" action="{{ url_for('evaluations.create_evaluation') }}" enctype="multipart/form-data">
+            {{ form.hidden_tag() }}
+            
+            <div class="form-group">
+                {{ form.grade.label(class="form-label") }}
+                {{ form.grade(class="form-control") }}
+                {% if form.grade.errors %}
+                    <div class="text-danger">
+                        {% for error in form.grade.errors %}
+                            <small>{{ error }}</small><br>
+                        {% endfor %}
+                    </div>
+                {% endif %}
+            </div>
+
+            <div class="form-group">
+                {{ form.file_uploads.label(class="form-label") }}
+                {{ form.file_uploads(class="form-control-file") }}
+                {% if form.file_uploads.errors %}
+                    <div class="text-danger">
+                        {% for error in form.file_uploads.errors %}
+                            <small>{{ error }}</small><br>
+                        {% endfor %}
+                    </div>
+                {% endif %}
+            </div>
+
+            <div class="form-group">
+                {{ form.number_of_exercises.label(class="form-label") }}
+                {{ form.number_of_exercises(class="form-control") }}
+                {% if form.number_of_exercises.errors %}
+                    <div class="text-danger">
+                        {% for error in form.number_of_exercises.errors %}
+                            <small>{{ error }}</small><br>
+                        {% endfor %}
+                    </div>
+                {% endif %}
+            </div>
+
+            <div class="form-group">
+                {{ form.additional_files.label(class="form-label") }}
+                {{ form.additional_files(class="form-control-file") }}
+                {% if form.additional_files.errors %}
+                    <div class="text-danger">
+                        {% for error in form.additional_files.errors %}
+                            <small>{{ error }}</small><br>
+                        {% endfor %}
+                    </div>
+                {% endif %}
+            </div>
+
+            <div class="form-group">
+                {{ form.instructions.label(class="form-label") }}
+                {{ form.instructions(class="form-control") }}
+                {% if form.instructions.errors %}
+                    <div class="text-danger">
+                        {% for error in form.instructions.errors %}
+                            <small>{{ error }}</small><br>
+                        {% endfor %}
+                    </div>
+                {% endif %}
+            </div>
+
+            <div class="form-group">
+                {{ form.submit(class="btn btn-primary") }}
+            </div>
+        </form>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
